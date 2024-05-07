@@ -11,6 +11,7 @@ object DemoIceberg {
       .config("spark.sql.catalog.spark_catalog", "org.apache.iceberg.spark.SparkSessionCatalog")
       .config("spark.sql.catalog.spark_catalog.type", "hadoop")
       .config("iceberg.auto.create.all", "true")
+      .config("spark.sql.warehouse.dir", "/Users/srirajkadimisetty/projects/demos/e2e-prototype/approach-1/staging-area/warehouse")
       .config("spark.sql.catalog.spark_catalog.warehouse", "/Users/srirajkadimisetty/projects/demos/e2e-prototype/approach-1/staging-area/warehouse")
       .config("datanucleus.schema.autoCreateTables", "true")
       .config("spark.local.dir", "/Users/srirajkadimisetty/projects/demos/e2e-prototype/approach-1/staging-area/warehouse/temp")
